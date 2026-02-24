@@ -69,9 +69,6 @@ title: "Héctor - CV & Repos"
   <section class="section">
     <h2>Proyectos destacados (topic: <code>showcase</code>)</h2>
     <div id="featured" class="cards"></div>
-    <p class="muted" style="margin:10px 0 0">
-      Para que un repo salga aquí, añade el topic <b>showcase</b> en GitHub.
-    </p>
   </section>
 
   <section class="section">
@@ -127,7 +124,7 @@ title: "Héctor - CV & Repos"
   function renderFeatured(repos){
     const featured = repos.filter(r => r.topics.includes(FEATURED_TOPIC)).slice(0, 6);
     const el = document.getElementById("featured");
-    el.innerHTML = featured.length ? "" : `<div class="muted">Aún no tienes repos con topic <b>${FEATURED_TOPIC}</b>.</div>`;
+    
 
     featured.forEach((r, i) => {
       const topics = r.topics.slice(0, 4).map(t => `<span class="pill">${t}</span>`).join("");
