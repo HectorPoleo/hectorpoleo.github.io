@@ -73,7 +73,6 @@ body{
 
 .grid2{
   display:grid;
-  align-items:center
   grid-template-columns:1.1fr .9fr;
   gap:40px;
 }
@@ -95,14 +94,11 @@ body{
 }
 
 .profile-img{
-  width:50%;
-  height:70%;
+  width:100%;
+  height:auto;
   object-fit:cover;
-  display:flex;
+  display:block;
   border-radius:16px;
-}
-.text-img{
-  max-width:500px;
 }
 
 .profile .bio{
